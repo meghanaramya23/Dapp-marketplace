@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: radial-gradient(circle at 0% 0%, #f97316, transparent 55%),
+    radial-gradient(circle at 100% 100%, #1d4ed8, transparent 55%),
+    linear-gradient(135deg, #020617, #0f172a);
+  color: #e5e7eb;
+}
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 24px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  padding: 28px;
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #facc15, #fb923c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-main,
+.btn-secondary,
+.btn-buy {
+  border: none;
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-weight: 600;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s;
+}
+
+.btn-main {
+  width: 100%;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.btn-secondary {
+  width: 100%;
+  margin-top: 12px;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: white;
+}
+
+.btn-buy {
+  width: 100%;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
+}
+
+.btn-main:hover,
+.btn-secondary:hover,
+.btn-buy:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.form {
+  margin-top: 18px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(25, 103, 212, 0.6);
+  background: rgba(15, 23, 42, 0.9);
+  color: #7ce91cff;
+  margin-top: 10px;
+}
+
+.input::placeholder {
+  color: #2f67d8ff;
+}
+
+.items-grid {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.item-card {
+  background: rgba(77, 227, 51, 0.95);
+  border-radius: 16px;
+  border: 1px solid rgba(223, 135, 20, 0.9);
+  padding: 16px;
+}
+
+.item-card h3 {
+  margin: 0 0 6px 0;
+  color: #1475d6ff;
+}
+
+.account {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #2367deff;
+}
+
+.status {
+  margin-top: 16px;
+  text-align: center;
+  font-weight: 600;
+  min-height: 22px;
+}
+
